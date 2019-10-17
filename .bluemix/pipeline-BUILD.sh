@@ -75,7 +75,7 @@ function test_node_app {
     echo testing node.js app ${CONTRACT}
     pushd apps/${CONTRACT}
     npm install
-    # npm test
+    npm test
     SCRIPTS="prepublish prepare prepublishOnly prepack"
     for SCRIPT in ${SCRIPTS}
     do
